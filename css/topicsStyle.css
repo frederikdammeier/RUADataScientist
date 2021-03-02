@@ -1,0 +1,186 @@
+/* In diesem Stylesheet werden die einzelnen Topics formatiert
+und responsive gestaltet.*/
+
+
+/* Hier wird der Titel der Topics formatiert. */
+
+.titel_link {
+    font-size: 2vw;
+    width: 90%;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    line-height: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* Hier wird festgelegt, was passiert wenn man über die Topics hovert*/
+
+.grid_container .item:hover {
+    /*Der Inhalt der einzelnen Felder wird um 50% transparenter*/
+    opacity: 0.6;
+}
+
+.grid_container .item:hover .titel_link {
+    /*Beim Titel die Schriftgröße erhöht*/
+    font-size: 30px;
+}
+
+
+/*In diesem Abschnitt werden die einzelnen Felder der Topics mit Inhalt gefüllt */
+
+.item {
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    grid-row: span 1;
+    grid-column: span 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.item1 {
+    background-image: url(../pictures/topic_MachineLearningSizedsmall.png);
+}
+
+.item2 {
+    background-image: url(../pictures/topic_HTSProjectNew.jpg);
+}
+
+.item3 {
+    background-image: url(../pictures/topic_AINEWSize.jpg);
+}
+
+.item4 {
+    background-image: url(../pictures/topic_DataMiningNEWSize.jpg);
+}
+
+.item5 {
+    background-image: url(../pictures/topic_DeepLearningNormal.jpg);
+}
+
+.item6 {
+    background-image: url(../pictures/topic_ApplicationNEWSize.jpg);
+}
+
+.item7 {
+    background-image: url(../pictures/topic_CareerNEWSize.jpg);
+}
+
+.item8 {
+    background-image: url(../pictures/topic_FundaSizedsmall.png);
+}
+
+.item9 {
+    background-image: url(../pictures/topic_Tools.jpg);
+}
+
+
+/*Hier wird angeben, wie viele Spalten und Reihen der Grid haben soll
+und wir der Grid in der Seite angeordnet sein sill*/
+
+.grid_container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 2%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-right: 12%;
+    padding-left: 12%;
+}
+
+
+/* Hier wird festgelegt was passiert, wenn der Bildschirm eine Breite von 850 Pixel unterschreitet.
+Der Grid hat nur noch 2 Spalten undbekommt 4 Reihen. Auch die Schriftgröße und die Bilder werden angepasst*/
+
+@media screen and (max-width: 850px) {
+    .titel_link {
+        font-size: 20px;
+        max-width: 200px;
+        text-overflow: ellipsis;
+        top: 50%;
+        text-align: center;
+    }
+    .grid_container .item:hover .titel_link {
+        font-size: 3vw;
+    }
+    .grid_container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, 20%);
+        margin: 35px;
+        margin-top: 5px;
+        justify-content: center;
+        row-gap: 1%;
+        column-gap: 4%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+
+/* Hier wird festgelegt was passiert, 
+wenn der Bildschirm eine Breite von  670 Pixel unterschreitet.
+*/
+
+@media screen and (max-width: 670px) {
+    .grid_container {
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+}
+
+
+/* Hier wird festgelegt was passiert, 
+wenn der Bildschirm eine Breite von  550Pixel unterschreitet.
+*/
+
+@media screen and (max-width: 550px) {
+    .grid_container {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9, 11%);
+        margin-top: 10px;
+        row-gap: 5px;
+        column-gap: 1%;
+        height: 99em;
+        align-self: center;
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+    .item {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Hier wird festgelegt was passiert, 
+wenn der Bildschirm eine Breite von  320Pixel unterschreitet.
+*/
+
+@media screen and (max-width: 320px) {
+    .grid_container {
+        padding-right: 1%;
+        padding-left: 1%;
+        height: 75em;
+    }
+    .titel_link {
+        font-size: 18px;
+        max-width: 175px;
+    }
+    .grid_container .item:hover .titel_link {
+        font-size: 18px;
+    }
+}

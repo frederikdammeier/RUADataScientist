@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+ul.content-list {
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 16p;
+}
+
+ul.content-list>li{
+    padding-top: 1vh;
+}
+
+/*The paralax is the picture at the top in the background with the titel*/
+
+.paralax {
+    background: url(../pictures/howToBeginADataScienceProjectSized.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 180px;
+    display: grid;
+}
+
+.quoteText {
+    font-style: italic;
+    border-radius: 3vw;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    max-height: 150px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.quoteText>h1 {
+    padding: 20px 15px 20px 15px;
+    /*  font-size: 200%;*/
+    text-align: left;
+}
+
+.quoteText>h2 {
+    padding: 5px 15px 20px 25px;
+}
+
+.contentBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contentBox>h1 {
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin: 0px;
+    text-align: left;
+}
+
+.contentBox>p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.aboutContainer {
+    display: block;
+    color: rgb(39, 39, 39);
+}
+
+.aboutContainer>div {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.aboutContainer>div>div>p {
+    text-align: justify;
+}
+
+.aboutContainer>div>img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    margin-right: -80px;
+}
+
+.invisibleBox {
+    color: rgb(237, 237, 237);
+    padding: 10px;
+}
+
+.source {
+    padding: 30px;
+}
+
+.source>h3 {
+    font-style: italic;
+    color: rgb(124, 122, 122);
+    font-size: small;
+}
+
+.source_link {
+    font-style: italic;
+    color: rgb(124, 122, 122);
+    font-size: small;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.source_link:hover {
+    color: rgb(2, 2, 2);
+}
+
+.topic_video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_container {
+    position: relative;
+    max-width: 560px;
+    margin: auto;
+}
+
+.video_container::before {
+    content: "";
+    display: block;
+    padding-top: 56%;
+}
+
+@media screen and (min-width: 801px) {
+    .quoteText {
+        border-radius: 20px;
+    }
+    .paralax {
+        height: 200px;
+    }
+    .aboutContainer>div {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .aboutContainer>div>p {
+        text-align: justify;
+        font-size: 18px;
+    }
+    .contentPictureBox {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .contentBox>p {
+        text-align: right;
+    }
+    .source>h3 {
+        margin-left: 10%;
+    }
+    .source a {
+        margin-left: 10%;
+    }
+}
+
+
+/* Hier wird festgelegt was passiert, 
+wenn der Bildschirm eine Breite von  600Pixel unterschreitet.
+*/
+
+@media screen and (max-width: 600px) {
+    .quoteText {
+        font-size: 3vw;
+    }
+}
+
+
+/* Hier wird festgelegt was passiert, 
+wenn der Bildschirm eine Breite von  400Pixel unterschreitet.
+*/
+
+@media screen and (max-width: 400px) {
+    .quoteText {
+        font-size: 4.5vw;
+    }
+}
+
+
+/* Hier wird festgelegt was passiert, 
+wenn der Bildschirm eine Breite von  300Pixel unterschreitet.
+*/
+
+@media screen and (max-width: 300px) {
+    .quoteText {
+        font-size: 5vw;
+    }
+}

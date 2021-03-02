@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+/* CSS for About-Page*/
+
+.paralax {
+    background: url(../pictures/about_paralaxSized.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+    display: grid;
+}
+
+.quoteText {
+    font-style: italic;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.quoteText>h1 {
+    padding: 20px 15px 0px 15px;
+   font-size: 5vw;
+}
+
+.quoteText>h2 {
+    padding: 5px 15px 20px 25px;
+    font-size: 3vw;
+}
+
+.contentBox {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.contentBox>h1 {
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.contentBox>p {
+    text-align: justify;
+}
+
+.aboutContainer {
+    display: block;
+    color: rgb(39, 39, 39);
+    /*background-color: rgb(237, 237, 237);*/
+}
+
+.aboutContainer>div {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.aboutContainer>div>div>p {
+    text-align: justify;
+}
+
+.aboutContainer>div>img {
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    height: auto;
+    align-self: center;
+}
+
+.invisibleBox {
+    color: rgb(237, 237, 237);
+    padding: 10px;
+}
+
+.regards {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 600px) {
+    .paralax {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .quoteText {
+        border-radius: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .quoteText>h1{
+        font-size: 2.5vw;;
+    }
+
+    .quoteText>h2{
+        font-size: 1vw;;
+    }
+
+    .paralax {
+        height: 300px;
+    }
+    .aboutContainer>div {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .aboutContainer>div>p {
+        text-align: justify;
+    }
+    .contentPictureBox {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .contentBox>p {
+        text-align: right;
+    }
+    .source>h3 {
+        margin-left: 170px;
+    }
+}

@@ -1,0 +1,228 @@
+/* CSS for Test-Form*/
+
+body{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(240,241,255,1) 100%);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1em;
+    color: #001233;
+}
+
+h3{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    color: #001233;
+}
+
+.container{
+    width: 360px;
+    height: 500px;
+    margin: 15vh auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(233, 231, 236);
+    box-shadow: 3px 4px 10px rgba(5, 1, 1, 0.178); 
+}
+
+.container form section{
+    width: 280px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+form section{
+    background-color: transparent;
+}
+
+form section input{
+    width: 100%;
+    padding: 10px 5px 0px 5px;
+    margin: 5px 0;
+    border: 0;
+    outline: none;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+
+.return{
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    margin-top: 50%;
+}
+
+.seperator{
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding-bottom: 15px;
+}
+
+form section button{
+    width: 40%;
+    height: 35px;
+    margin: 0 10px;
+    background: #70befd;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    color: #333;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+#Form2{
+    left: 450px;
+}
+#Form3{
+    left: 450px;
+}
+#Form4{
+    left: 450px;
+}
+#Form5{
+    left: 450px;
+}
+#Form6{
+    left: 450px;
+}
+#Form7{
+    left: 450px;
+}
+#Form8{
+    left: 450px;
+}
+#Form9{
+    left: 450px;
+}
+#Form10{
+    left: 450px;
+}
+#Form11{
+    left: 450px;
+}
+#Form12{
+    left: 450px;
+}
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-size: 150%;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background-color: #70befd;
+    transition: 0.5s;
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #70befd;
+}
+
+.range-container {
+	width: 90%;
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+    margin-bottom: 1.3em;
+}
+
+.label-container {
+	-webkit-flex-basis: 100%;
+	display: -webkit-flex;
+	-webkit-flex-wrap: nowrap;
+	-webkit-justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.label {
+	color:  #424242;
+	font-size: 10px;
+	margin-top: 3px;
+	text-align: center;
+	max-width: 20px;
+	-webkit-tap-highlight-color: transparent;  /*gets rid of black flash on click of track*/
+}
+.slider-container {
+	position: relative;
+	height: 100%;
+    width: 100%;
+}
+.slider {
+	position: absolute;
+	left:0;
+	width: 100%;
+}
+
+.range-fill {
+	position:absolute;
+	top:4px;
+	left:4px;
+	height: 30px;
+	pointer-events: none;
+	border-radius: 10px;
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+	-webkit-flex-basis: 100%;
+	-webkit-tap-highlight-color: transparent;
+	background: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 1rem;
+    height: 1rem;
+    background: transparent;
+    border: 2px solid #505050;
+    border-radius: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: #70befd;
+    margin-top: -2px;
+    border: 2px ;
+    cursor: pointer;
+}
+
+input[type=range]:focus {
+    outline: none;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<title>Test yourself!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/test.css">
+<link rel="icon" type="image/ico" href="pictures/icon.svg" />
+
+<body>
+
+    <!--
+        Each of the following sections represent a test-page, which can slide in and out.
+    -->
+    <div class="container">
+        <form action="result.php" method="POST">
+
+            <section id="Form1">
+                <h2>Welcome to the Test</h2>
+                <div class="btn-box">
+                    <button type="button" id="Next1">Start the Test</button>
+                </div>
+
+                <h3>Already took the test?</h3>
+
+                <div class="btn-box">
+                    <a href='login.html'>
+                        <button type="button" id="Login">Login</button>
+                    </a>
+                </div>
+
+                <div class="btn-box">
+                    <a href='index.html'>
+                        <div class="return">Return to Homepage</div>
+                    </a>
+                </div>
+            </section>
+
+            <!--Knowledge-Questions-->
+            <section id="Form2">
+                <h2>Which of the following is the most important language for Data Science?</h2>
+                <div class="seperator">
+                    <input type="radio" id="1" name="knowledge_1" value="1">
+                    <label for="f-option">Java</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="2" name="knowledge_1" value="2">
+                    <label for="s-option">C</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="3" name="knowledge_1" value="3">
+                    <label for="t-option">Python</label>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back1">Back</button>
+                    <button type="button" id="Next2">Next</button>
+                </div>
+            </section>
+
+            <section id="Form3">
+                <h2>Which of the following is not an assumption of linear regression?</h2>
+                <div class="seperator">
+                    <input type="radio" id="1" name="knowledge_2" value="1">
+                    <label for="f-option">Linear Relationship</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="2" name="knowledge_2" value="2">
+                    <label for="s-option">Auto-Correlation</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="3" name="knowledge_2" value="3">
+                    <label for="t-option">Homoscedasticity</label>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back2">Back</button>
+                    <button type="button" id="Next3">Next</button>
+                </div>
+            </section>
+
+            <section id="Form4">
+                <h2>What is Deep Learning? </h2>
+                <div class="seperator">
+                    <input type="radio" id="1" name="knowledge_3" value="1">
+                    <label for="f-option">A subfield of machine learning concerned with algorithms inspired by the
+                        structure and function of the brain. </label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="2" name="knowledge_3" value="2">
+                    <label for="s-option">A process of discovering patterns in large data sets involving methods at the
+                        intersection of machine learning, statistics and database systems.</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="3" name="knowledge_3" value="3">
+                    <label for="t-option">A dicipline that concerns the collection, organization, analysis,
+                        interpretation and presentation of data. </label>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back3">Back</button>
+                    <button type="button" id="Next4">Next</button>
+                </div>
+            </section>
+
+            <section id="Form5">
+                <h2>Which one is not a data measurement scale?</h2>
+                <div class="seperator">
+                    <input type="radio" id="1" name="knowledge_4" value="1">
+                    <label for="f-option">Nominal Scale</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="2" name="knowledge_4" value="2">
+                    <label for="s-option">Inverse Scale</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="3" name="knowledge_4" value="3">
+                    <label for="t-option">Ordinal Scale</label>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back4">Back</button>
+                    <button type="button" id="Next5">Next</button>
+                </div>
+            </section>
+
+            <section id="Form6">
+                <h2>Which statement is true about supervised learning?</h2>
+                <div class="seperator">
+                    <input type="radio" id="1" name="knowledge_5" value="1">
+                    <label for="f-option">Supervised Learning uses known and labeled data as input.</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="2" name="knowledge_5" value="2">
+                    <label for="s-option">Supervised learning has no feedback mechanism.</label>
+                </div>
+                <div class="seperator">
+                    <input type="radio" id="3" name="knowledge_5" value="3">
+                    <label for="t-option">The most commonly used supervised learning algorithms are k-means clustering,
+                        hierarchical clustering, and apriori algorithm.</label>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back5">Back</button>
+                    <button type="button" id="Next6">Next</button>
+                </div>
+            </section>
+
+            <!--Likert Questions -->
+
+            <section id="Form7">
+
+                <h2>Choose a Response:</h2>
+
+                <div>
+                    <h4>I enjoy mathematics and statistics.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_1" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>I enjoy working in a Team.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_2" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>I am interested in recent Big Data trends.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_3" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back6">Back</button>
+                    <button type="button" id="Next7">Next</button>
+                </div>
+            </section>
+
+            <section id="Form8">
+                <h2>Choose a Response:</h2>
+
+                <div>
+                    <h4>I find the idea of self-learning computers fascinating.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_4" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>I am curious about what large amounts of data have to offer.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_5" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>I like complex correlations.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_6" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="Back7">Back</button>
+                    <button type="button" id="Next8">Next</button>
+                </div>
+            </section>
+
+            <section id="Form9">
+                <h2>Choose a Response:</h2>
+                <div>
+                    <h4>Decisions should be based only on intuition.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_7" min="1" max="5" step="-1"
+                                list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>I am aware of the influence of digital information on mankind.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_8" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>I like to solve problems.</h4>
+                    <div class="range-container">
+                        <div class="slider-container">
+                            <div class="range-fill"></div>
+                            <input class="slider" type="range" name="likert_9" min="1" max="5" step="1" list="testlist">
+                        </div>
+                        <div class="label-container">
+                            <div class="label">Strongly Disagree</div>
+                            <div class="label">Disagree</div>
+                            <div class="label">Neutral</div>
+                            <div class="label">Agree</div>
+                            <div class="label">Strongly Agree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <button type="button" id="Back8">Back</button>
+                    <button type="submit" name="submit" value="test">Submit</button>
+                </div>
+            </section>
+        </form>
+
+        <dvi class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>1</small></div>
+            <div class="step-col"><small>2</small></div>
+            <div class="step-col"><small>3</small></div>
+            <div class="step-col"><small>4</small></div>
+            <div class="step-col"><small>5</small></div>
+            <div class="step-col"><small>6</small></div>
+            <div class="step-col"><small>7</small></div>
+            <div class="step-col"><small>8</small></div>
+        </dvi>
+
+    </div>
+
+    <script src="./js/test.js"></script>
+
+</body>
+</html>
